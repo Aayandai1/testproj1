@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE ZORO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+       <li> <a class ="active" href="home.html">THE ZORO</a></li>
+       <li><a href="about.html">About</a></li>
+       <li><a href="content.html">Content</a></li>
+       <li> <a href="contact.html">Contact</a></li>
+    </nav>
+  </header>
+
+  <style>
+    nav {
+  display: flex;  
+  justify-content: flex-start; 
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+    * {
+      box-sizing: border-box;
+    }
+
+    input[type=text],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+      color: black;
+    }
+
+    input[type=submit] {
+      background-color: #4CAF50;
+      color: black;
+      padding: 12px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+      color: black;
+    }
+
+
+    .container {
+      position: relative;
+      bottom: 50%;
+      top: 50%;
+      margin: auto;
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      padding: 10px;
+      color: black;
+      background-color: white;
+
+    }
+
+    .column {
+      width: 50%;
+      margin-top: 6px;
+      padding: 20px;
+      text-align: centre;
+      color: black;
+    }
+
+    .pos {
+      position: relative;
+      left: 50%;
+      right: 50%;
+    }
+
+    .row:after {
+      display: table;
+      clear: both;
+      color: black;
+    }
+
+    body {
+      background-color: black;
+      color: black;
+    }
+
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div style="text-align:center">
+      <h2>Contact Me</h2>
+      <p>Swing by for a cup of coffee, or leave a message:</p>
+    </div>
+    <div class="row">
+      <div class="column">
+        <form class="pos">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+          <label for="subject">Describe issue</label>
+          <textarea id="subject" name="subject" placeholder="Describe your issue here! or leave a message!"
+            style="height:170px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
